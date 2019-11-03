@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="modulo2Layouts.RelativeLayoutSamplePage">
+    <ContentPage.Content>
+        <RelativeLayout HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        x:Name="layout">
+            <BoxView x:Name="box"
+                     Color="Blue"
+                     HeightRequest="50"
+                     WidthRequest="50"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = .1}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = .1}" />
+            <Label x:Name="centerLabel"
+                   FontSize="20"
+                   Text="RelativeLayout Demo"
+                   RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = .5}"
+                   RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor =.1}" />
+            <BoxView Color="Green"
+                     RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor=.10, Constant=10}"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor=.2, Constant=20}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=centerLabel, Property=X, Constant=15}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=centerLabel, Property=Y, Constant=100}" />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>

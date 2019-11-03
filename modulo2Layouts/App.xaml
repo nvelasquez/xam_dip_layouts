@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="modulo2Layouts.App">
+    <Application.Resources>
+        <!--<ControlTemplate x:Key="LogoTemplate">
+            <StackLayout Orientation="Vertical"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand"
+                         Padding="10,100,10,0">
+                <Image Source="icon.png"
+                       HorizontalOptions="Center"></Image>
+                <Label Text="Mi Empresita"
+                       HorizontalOptions="Center"></Label>
+                <ContentPresenter />
+            </StackLayout>
+        </ControlTemplate>-->
+        <ControlTemplate x:Key="Cafetera">
+            <StackLayout Orientation="Vertical"
+                         Padding="10,50,10,0">
+                <ContentView HorizontalOptions="Center">
+                    <StackLayout Orientation="Vertical">
+                        <Image Source="logo.png"
+                               WidthRequest="100"
+                               HeightRequest="100"></Image>
+                        <Label Text="Uteco"
+                               FontSize="Title"></Label>
+                    </StackLayout>
+                </ContentView>
+                <ContentPresenter />
+            </StackLayout>
+        </ControlTemplate>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="modulo2Layouts.ContentViewSamplePage">
+    <ContentPage.Content>
+        <ContentView ControlTemplate="{StaticResource Key=Cafetera}">
+            <ScrollView Orientation="Vertical"
+                        HorizontalScrollBarVisibility="Never">
+                <StackLayout Padding="10,100,10,10"
+                             Orientation="Vertical">
+                    <ContentView HorizontalOptions="Center"
+                                 VerticalOptions="Start">
+                        <StackLayout Orientation="Vertical">
+                            <Label Text="Texto 1"></Label>
+                            <Label Text="Texto 2"></Label>
+                        </StackLayout>
+                    </ContentView>
+                    <ContentView HorizontalOptions="Start">
+                        <Label Text="El contenido de la pagina"></Label>
+                    </ContentView>
+                    <Frame HasShadow="False"
+                           BorderColor="Black"
+                           CornerRadius="5">
+                        <Entry BackgroundColor="Transparent"
+                               Placeholder="Mi label favorito"></Entry>
+                    </Frame>
+                    <Label FontSize="Medium"
+                           Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mattis ullamcorper elit sed rutrum. In semper dictum tortor quis condimentum. Aliquam non eros iaculis, feugiat magna at, molestie dolor. Nunc id leo lectus. Morbi ullamcorper pretium bibendum. Proin erat nulla, tincidunt ac sagittis et, consequat nec turpis. Quisque imperdiet vulputate nunc. Nulla sit amet dolor velit. Nunc elementum, ex ac venenatis fringilla, nulla urna interdum nisi, in porta ipsum enim vitae ligula. Duis ornare a lorem at pulvinar.
+
+Phasellus sed ex suscipit elit faucibus euismod in in leo. Maecenas gravida auctor volutpat. Vestibulum mauris est, tempus nec ante at, tincidunt iaculis risus. Nullam nisl neque, iaculis et purus eget, consequat laoreet massa. Mauris nec augue at ligula blandit facilisis. Aenean non scelerisque ligula. Sed elementum massa in enim pellentesque, et bibendum nulla vulputate. Nunc sit amet erat ac ex aliquet porta quis in augue. Cras suscipit dui vel felis dignissim consectetur id id orci. Pellentesque suscipit elit at malesuada ullamcorper.
+
+Morbi tempus luctus orci, quis ultrices erat egestas at. Etiam sit amet libero sit amet lorem suscipit lacinia. Etiam at hendrerit justo. Donec ligula nisl, condimentum et faucibus at, fermentum consectetur arcu. Nulla ultricies mi eget sem tincidunt, non vulputate nisi sodales. Vivamus congue ligula id accumsan feugiat. Nullam feugiat metus arcu, ut volutpat nisi fringilla nec. Phasellus at dui non odio consectetur pretium. Curabitur a lacinia sapien. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Suspendisse eu neque finibus, cursus lacus at, semper turpis. Maecenas id ante sit amet massa tristique congue nec rutrum urna.
+
+Aliquam facilisis nisi orci, molestie varius diam efficitur a. Aenean iaculis nibh nec velit bibendum, ac egestas ante mollis. Morbi mattis lectus id commodo dictum. Proin leo metus, gravida sit amet tortor at, pharetra facilisis ipsum. Mauris maximus quam id tortor vulputate tincidunt interdum non justo. Duis eu aliquet justo. Nullam neque libero, congue vel vulputate et, fermentum id ipsum. Donec commodo mauris sed ultricies accumsan. Aliquam ac nisi eget erat sagittis rhoncus.
+
+Etiam laoreet rutrum ullamcorper. Phasellus mollis dolor at magna tempor lacinia. Nam ut ipsum vitae nulla facilisis fermentum. Maecenas faucibus in orci eget pretium. Fusce congue dictum condimentum. Sed eleifend bibendum odio, placerat ullamcorper nisi posuere nec. Donec vehicula risus vitae semper sodales. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam ac dictum lectus, nec ultrices ex. Nullam bibendum augue sed est dapibus elementum. Aenean ultricies ut eros sit amet ultrices. Donec et euismod turpis. Nunc porttitor ultricies urna eget faucibus. Morbi quis metus aliquam, luctus augue efficitur, aliquet nisl. In euismod et est et gravida."></Label>
+
+                </StackLayout>
+            </ScrollView>
+        </ContentView>
+    </ContentPage.Content>
+</ContentPage>

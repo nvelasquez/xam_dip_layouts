@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="modulo2Layouts.OtraPaginaPage">
+    <ContentPage.Content>
+        <!--<AbsoluteLayout Padding="10,50,10,10"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+            <BoxView AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0.2,.4,0.8,.1"
+                     BackgroundColor="Black" />
+
+            <BoxView AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0.5,.2,.3,.4"
+                     BackgroundColor="Red" />
+
+            <BoxView AbsoluteLayout.LayoutFlags="SizeProportional"
+                     AbsoluteLayout.LayoutBounds="100,300,0.2,.05"
+                     BackgroundColor="Pink" />
+
+            <BoxView AbsoluteLayout.LayoutFlags="PositionProportional"
+                     AbsoluteLayout.LayoutBounds="0.4,.9,100,50"
+                     BackgroundColor="Blue" />
+        </AbsoluteLayout>-->
+        <RelativeLayout HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        x:Name="layout">
+            <BoxView x:Name="box"
+                     Color="Blue"
+                     HeightRequest="50"
+                     WidthRequest="50"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = 0.5}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width, Factor = .2}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height, Factor = .1}" />
+            <BoxView x:Name="boxRed"
+                     Color="Red"
+                     HeightRequest="50"
+                     WidthRequest="50"
+                     RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToView, ElementName=box, Property=Width, Factor = 0.5}"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToView, ElementName=box, Property=Width, Constant=100}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToView, ElementName=box, Property=Height, Constant=200}" />
+        </RelativeLayout>
+    </ContentPage.Content>
+</ContentPage>
